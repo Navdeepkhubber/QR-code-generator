@@ -1,0 +1,182 @@
+:root {
+
+  --input-border: #CDD9ED;
+  --input-background: #fff;
+  --input-placeholder: #CBD1DC;
+
+  --input-border-focus: #275EFE;
+
+  --group-color: var(--input-color);
+  --group-border: var(--input-border);
+  --group-background: #EEF4FF;
+
+  --group-color-focus: #fff;
+  --group-border-focus: var(--input-border-focus);
+  --group-background-focus: #678EFE;
+
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+}
+
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  text-align: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: linear-gradient(rgba(255, 255, 255, 1.5), rgba(255, 255, 255, 0.5)),
+  url("https://public-files.gumroad.com/zs33l38410bcby4no5bu4bckm0tb");
+}
+
+img {
+  display: block;
+  width: 380px;
+  height: 380px;
+  margin: 3rem auto;
+}
+
+input {
+  width: 100%;
+  padding: 8px 16px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  border-radius: 6px;
+  color: black;
+  border: 1px solid var(--input-border);
+  background: var(--input-background);
+  transition: border .3s ease;
+  max-width: 300px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+.css-button-retro--sand {
+  min-width: 100px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #000;
+  color: #000;
+  background: transparent;
+  margin-left: 1.5em;
+  margin-top: 20px;
+
+}
+
+.field {
+  margin-top: 60px;
+}
+.css-button-retro--sand:hover:after {
+  top: 0;
+  left: 0;
+}
+.css-button-retro--sand:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #ced4da;
+}
+
+a:link {
+  min-width: 100px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border: 1px solid #000;
+  color: #000;
+  background: transparent;
+  text-decoration: none;
+}
+
+a:link:after {
+  content: "";
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  transition: 0.2s;
+  background-color: #ced4da;
+}
+
+a:link:hover:after {
+top: 0;
+left: 0;
+}
+
+@media (max-width:500px){
+
+.App {
+  max-width: 100%;
+}
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-size: contain;
+    background-image: linear-gradient(rgba(255, 255, 255, 1.5), rgba(255, 255, 255, 0.5)),
+    url("https://public-files.gumroad.com/zs33l38410bcby4no5bu4bckm0tb");
+    background-attachment: fixed;
+  }
+
+.field {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  margin: 3rem auto;
+}
+
+.css-button-retro--sand {
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
+  img {
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 1rem auto;
+  }
+
+}
+
+
+
+
+
